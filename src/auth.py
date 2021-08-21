@@ -4,7 +4,7 @@ import random
 import hashlib
 import jwt
 import smtplib
-from src.data_interface import read_data, write_data
+#from src.data_interface import read_data, write_data
 from src.error import InputError,AccessError
 from src import config
 
@@ -101,7 +101,7 @@ def auth_login_v1(email, password):
     return {
     }
 
-def auth_register_v1(email, password, name_first, name_last):
+def auth_register(email, password, name_first, name_last):
     """
     Handles the user registration details.
     Uses a dictionary to store the registration details.
