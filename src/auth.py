@@ -70,7 +70,7 @@ def decode_token(token):
     return  {
     }
 
-def auth_login_v1(email, password):
+def auth_login(email, password):
     """
     Handles the user login.
 
@@ -125,11 +125,11 @@ def auth_register(email, password, name_first, name_last):
             the first and last name is not between 1 and 50 char long.
 
     """
-    #Test invalid email
+    
     return{} 
     
 
-def auth_logout_v1(token):
+def auth_logout(token):
     """
     Handles the logout by deleting the tokenised session id. 
 
